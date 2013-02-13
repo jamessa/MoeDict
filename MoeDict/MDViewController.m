@@ -7,8 +7,9 @@
 //
 
 #import "MDViewController.h"
+#import "MDReferenceLibraryViewController.h"
 
-@interface MDViewController ()
+@interface MDViewController () <UITextViewDelegate>
 
 @end
 
@@ -26,4 +27,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  
+ 
+}
+
+#pragma mark -UITextViewDelegate
+
+- (void)textViewDidChangeSelection:(UITextView *)textView {
+  NSString *term = [textView.text substringWithRange:textView.selectedRange];
+  
+  if (!term.length) {
+    return;
+  }
+  
+  MDReferenceLibraryViewController *referenceLibraryViewController = [[MDReferenceLibraryViewController alloc] initWithTerm:term];
+  [self
+   presentViewController:referenceLibraryViewController
+   animated:YES
+   completion:^{
+     // no op
+   }];
+}
 @end

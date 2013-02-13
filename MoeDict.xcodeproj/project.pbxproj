@@ -24,6 +24,13 @@
 		4B49A4FE16C9E1F400E072C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49A4D616C9E1F400E072C6 /* Foundation.framework */; };
 		4B49A50616C9E1F400E072C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B49A50416C9E1F400E072C6 /* InfoPlist.strings */; };
 		4B49A50916C9E1F400E072C6 /* MoeDictTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B49A50816C9E1F400E072C6 /* MoeDictTests.m */; };
+		4B49A51516C9E57800E072C6 /* MDReferenceLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B49A51316C9E57800E072C6 /* MDReferenceLibraryViewController.m */; };
+		4B49A51616C9E57800E072C6 /* MDReferenceLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B49A51416C9E57800E072C6 /* MDReferenceLibraryViewController.xib */; };
+		4B49A52616CA3F9600E072C6 /* DefaultStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 4B49A52516CA3F9600E072C6 /* DefaultStyle.css */; };
+		4B49A52C16CA487000E072C6 /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B49A52B16CA487000E072C6 /* Response.json */; };
+		4B49A53716CA4B7B00E072C6 /* header.html in Resources */ = {isa = PBXBuildFile; fileRef = 4B49A53616CA4B7B00E072C6 /* header.html */; };
+		4B49A53816CA4D5200E072C6 /* header.html in Resources */ = {isa = PBXBuildFile; fileRef = 4B49A53616CA4B7B00E072C6 /* header.html */; };
+		4B7462B116CB1288008DB54C /* Seperator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7462B016CB1288008DB54C /* Seperator.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		4B49A50516C9E1F400E072C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B49A50716C9E1F400E072C6 /* MoeDictTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoeDictTests.h; sourceTree = "<group>"; };
 		4B49A50816C9E1F400E072C6 /* MoeDictTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoeDictTests.m; sourceTree = "<group>"; };
+		4B49A51216C9E57800E072C6 /* MDReferenceLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDReferenceLibraryViewController.h; sourceTree = "<group>"; };
+		4B49A51316C9E57800E072C6 /* MDReferenceLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDReferenceLibraryViewController.m; sourceTree = "<group>"; };
+		4B49A51416C9E57800E072C6 /* MDReferenceLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDReferenceLibraryViewController.xib; sourceTree = "<group>"; };
+		4B49A52516CA3F9600E072C6 /* DefaultStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = DefaultStyle.css; path = ../../../Desktop/DefaultStyle.css; sourceTree = "<group>"; };
+		4B49A52B16CA487000E072C6 /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		4B49A53616CA4B7B00E072C6 /* header.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = header.html; sourceTree = SOURCE_ROOT; };
+		4B7462B016CB1288008DB54C /* Seperator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Seperator.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +103,8 @@
 		4B49A4C816C9E1F400E072C6 = {
 			isa = PBXGroup;
 			children = (
-				4B49A4DA16C9E1F400E072C6 /* MoeDict */,
+				4B7462B216CB225F008DB54C /* MoeDict */,
+				4B49A4DA16C9E1F400E072C6 /* MoeDictDemo */,
 				4B49A50116C9E1F400E072C6 /* MoeDictTests */,
 				4B49A4D316C9E1F400E072C6 /* Frameworks */,
 				4B49A4D216C9E1F400E072C6 /* Products */,
@@ -116,7 +131,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4B49A4DA16C9E1F400E072C6 /* MoeDict */ = {
+		4B49A4DA16C9E1F400E072C6 /* MoeDictDemo */ = {
 			isa = PBXGroup;
 			children = (
 				4B49A4E316C9E1F400E072C6 /* MDAppDelegate.h */,
@@ -127,6 +142,7 @@
 				4B49A4F216C9E1F400E072C6 /* MDViewController_iPad.xib */,
 				4B49A4DB16C9E1F400E072C6 /* Supporting Files */,
 			);
+			name = MoeDictDemo;
 			path = MoeDict;
 			sourceTree = "<group>";
 		};
@@ -150,6 +166,7 @@
 				4B49A50716C9E1F400E072C6 /* MoeDictTests.h */,
 				4B49A50816C9E1F400E072C6 /* MoeDictTests.m */,
 				4B49A50216C9E1F400E072C6 /* Supporting Files */,
+				4B49A52B16CA487000E072C6 /* Response.json */,
 			);
 			path = MoeDictTests;
 			sourceTree = "<group>";
@@ -161,6 +178,19 @@
 				4B49A50416C9E1F400E072C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B7462B216CB225F008DB54C /* MoeDict */ = {
+			isa = PBXGroup;
+			children = (
+				4B49A51216C9E57800E072C6 /* MDReferenceLibraryViewController.h */,
+				4B49A51316C9E57800E072C6 /* MDReferenceLibraryViewController.m */,
+				4B49A51416C9E57800E072C6 /* MDReferenceLibraryViewController.xib */,
+				4B49A52516CA3F9600E072C6 /* DefaultStyle.css */,
+				4B49A53616CA4B7B00E072C6 /* header.html */,
+				4B7462B016CB1288008DB54C /* Seperator.png */,
+			);
+			path = MoeDict;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +271,10 @@
 				4B49A4EB16C9E1F400E072C6 /* Default-568h@2x.png in Resources */,
 				4B49A4F116C9E1F400E072C6 /* MDViewController_iPhone.xib in Resources */,
 				4B49A4F416C9E1F400E072C6 /* MDViewController_iPad.xib in Resources */,
+				4B49A51616C9E57800E072C6 /* MDReferenceLibraryViewController.xib in Resources */,
+				4B49A52616CA3F9600E072C6 /* DefaultStyle.css in Resources */,
+				4B49A53716CA4B7B00E072C6 /* header.html in Resources */,
+				4B7462B116CB1288008DB54C /* Seperator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B49A50616C9E1F400E072C6 /* InfoPlist.strings in Resources */,
+				4B49A52C16CA487000E072C6 /* Response.json in Resources */,
+				4B49A53816CA4D5200E072C6 /* header.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +314,7 @@
 				4B49A4E116C9E1F400E072C6 /* main.m in Sources */,
 				4B49A4E516C9E1F400E072C6 /* MDAppDelegate.m in Sources */,
 				4B49A4EE16C9E1F400E072C6 /* MDViewController.m in Sources */,
+				4B49A51516C9E57800E072C6 /* MDReferenceLibraryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +505,7 @@
 				4B49A50E16C9E1F400E072C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B49A50F16C9E1F400E072C6 /* Build configuration list for PBXNativeTarget "MoeDictTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +514,7 @@
 				4B49A51116C9E1F400E072C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
